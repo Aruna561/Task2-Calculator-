@@ -1,9 +1,22 @@
-# Task2-Calculator-
-Hello connections!!!
+# Prompt the user for input
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Choose an operation (+, -, *, /): ")
 
-Exciting news!Completed the " " through python programming" Task_ at codesoft This experience was truly allowing me to enhance my skills in some tools.
+# Perform the calculation based on the chosen operation
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    if num2 == 0:
+        result = "Error! Division by zero."
+    else:
+        result = num1 / num2
+else:
+    result = "Invalid operation."
 
-#pythonprogramming #intern @codsoft #codsoftinternship
-
-Taskno :
- GitHub link:
+# Display the result
+print(f"Result: {result}")
